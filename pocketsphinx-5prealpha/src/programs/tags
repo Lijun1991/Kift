@@ -1,0 +1,22 @@
+Mbatch	batch.c	/^main(int32 argc, char *argv[])$/
+Mcontinuous	continuous.c	/^main(int argc, char *argv[])$/
+Mmdef_convert	mdef_convert.c	/^main(int argc, char *argv[])$/
+build_outdir_one	batch.c	/^build_outdir_one(cmd_ln_t *config, char const *arg/
+build_outdirs	batch.c	/^build_outdirs(cmd_ln_t *config, char const *uttid)/
+check_wav_header	continuous.c	/^check_wav_header(char *header, int expected_sr)$/
+print_word_times	continuous.c	/^print_word_times()$/
+process_ctl	batch.c	/^process_ctl(ps_decoder_t *ps, cmd_ln_t *config, FI/
+process_ctl_line	batch.c	/^process_ctl_line(ps_decoder_t *ps, cmd_ln_t *confi/
+process_fsgctl_line	batch.c	/^process_fsgctl_line(ps_decoder_t *ps, cmd_ln_t *co/
+process_lmnamectl_line	batch.c	/^process_lmnamectl_line(ps_decoder_t *ps, cmd_ln_t /
+process_mllrctl_line	batch.c	/^process_mllrctl_line(ps_decoder_t *ps, cmd_ln_t *c/
+read_mfc_file	batch.c	/^read_mfc_file(FILE *infh, int sf, int ef, int *out/
+recognize_from_file	continuous.c	/^recognize_from_file()$/
+recognize_from_microphone	continuous.c	/^recognize_from_microphone()$/
+setbuf	batch.c	/^    void setbuf(FILE* file, char* buf){$/
+sleep_msec	continuous.c	/^sleep_msec(int32 ms)$/
+wmain	batch.c	/^int wmain(int32 argc, wchar_t *wargv[]) {$/
+write_ctm	batch.c	/^write_ctm(FILE *fh, ps_decoder_t *ps, ps_seg_t *it/
+write_hypseg	batch.c	/^write_hypseg(FILE *fh, ps_decoder_t *ps, char cons/
+write_lattice	batch.c	/^write_lattice(ps_decoder_t *ps, char const *latdir/
+write_nbest	batch.c	/^write_nbest(ps_decoder_t *ps, char const *nbestdir/
