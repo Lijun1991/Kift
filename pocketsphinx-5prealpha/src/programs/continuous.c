@@ -258,14 +258,13 @@ recognize_from_microphone()
         in_speech = ps_get_in_speech(ps);
         if (in_speech && !utt_started) {
             utt_started = TRUE;
-           // E_INFO("Listening...\n");
+            E_INFO("Listening...\n");
         }
         if (!in_speech && utt_started) {
             /* speech -> silence transition, time to start new utterance  */
             ps_end_utt(ps);
             hyp = ps_get_hyp(ps, NULL );
             if (hyp != NULL) {
-				printf("hahhahahah\n");
                 printf("%s\n", hyp);
                 fflush(stdout);
             }

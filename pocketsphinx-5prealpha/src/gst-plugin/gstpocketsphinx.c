@@ -109,7 +109,7 @@ gst_pocketsphinx_get_property(GObject * object, guint prop_id,
                               GValue * value, GParamSpec * pspec);
 
 static GstStateChangeReturn
-gst_pocketsphinx_change_state(GstElement *element, GstStateChange transition);
+gst_pocketsphinx_change_state(GstElement *, GstStateChange transition);
 
 static GstFlowReturn
 gst_pocketsphinx_chain(GstPad * pad, GstObject *parent, GstBuffer * buffer);
