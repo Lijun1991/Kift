@@ -1,0 +1,101 @@
+Language model created by QuickLM on Wed Jun 14 23:24:13 EDT 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 11 sentences and 22 words
+
+\data\
+ngram 1=22
+ngram 2=31
+ngram 3=25
+
+\1-grams:
+-0.9317 </s> -0.3010
+-0.9317 <s> -0.2417
+-1.9731 A -0.2964
+-1.9731 ALARM -0.2470
+-1.9731 ALGORITHM -0.2470
+-1.9731 AN -0.2964
+-1.4960 CHECK -0.2821
+-1.9731 EMAIL -0.2470
+-1.9731 EVENTS -0.2964
+-1.9731 FOR -0.2964
+-1.9731 HISTORY -0.2470
+-1.9731 HOW -0.2964
+-1.9731 IS -0.2964
+-1.6721 MUSIC -0.2470
+-1.9731 SAM -0.2470
+-1.9731 SEND -0.2964
+-1.6721 SET -0.2917
+-1.9731 STOP -0.2917
+-1.9731 THE -0.2917
+-1.9731 TIMER -0.2470
+-1.9731 TODAY -0.2470
+-1.6721 WEATHER -0.2470
+
+\2-grams:
+-1.3424 <s> ALGORITHM 0.0000
+-0.8653 <s> CHECK 0.0000
+-1.3424 <s> HOW 0.0000
+-1.3424 <s> MUSIC 0.0000
+-1.3424 <s> SAM 0.0000
+-1.3424 <s> SEND 0.0000
+-1.0414 <s> SET 0.0000
+-1.3424 <s> STOP 0.0000
+-0.3010 A TIMER 0.0000
+-0.3010 ALARM </s> -0.3010
+-0.3010 ALGORITHM </s> -0.3010
+-0.3010 AN ALARM 0.0000
+-0.7782 CHECK EVENTS 0.0000
+-0.7782 CHECK HISTORY 0.0000
+-0.7782 CHECK WEATHER 0.0000
+-0.3010 EMAIL </s> -0.3010
+-0.3010 EVENTS FOR 0.0000
+-0.3010 FOR TODAY 0.0000
+-0.3010 HISTORY </s> -0.3010
+-0.3010 HOW IS 0.0000
+-0.3010 IS THE 0.0000
+-0.3010 MUSIC </s> -0.3010
+-0.3010 SAM </s> -0.3010
+-0.3010 SEND EMAIL 0.0000
+-0.6021 SET A 0.0000
+-0.6021 SET AN 0.0000
+-0.3010 STOP MUSIC 0.0000
+-0.3010 THE WEATHER 0.0000
+-0.3010 TIMER </s> -0.3010
+-0.3010 TODAY </s> -0.3010
+-0.3010 WEATHER </s> -0.3010
+
+\3-grams:
+-0.3010 <s> ALGORITHM </s>
+-0.7782 <s> CHECK EVENTS
+-0.7782 <s> CHECK HISTORY
+-0.7782 <s> CHECK WEATHER
+-0.3010 <s> HOW IS
+-0.3010 <s> MUSIC </s>
+-0.3010 <s> SAM </s>
+-0.3010 <s> SEND EMAIL
+-0.6021 <s> SET A
+-0.6021 <s> SET AN
+-0.3010 <s> STOP MUSIC
+-0.3010 A TIMER </s>
+-0.3010 AN ALARM </s>
+-0.3010 CHECK EVENTS FOR
+-0.3010 CHECK HISTORY </s>
+-0.3010 CHECK WEATHER </s>
+-0.3010 EVENTS FOR TODAY
+-0.3010 FOR TODAY </s>
+-0.3010 HOW IS THE
+-0.3010 IS THE WEATHER
+-0.3010 SEND EMAIL </s>
+-0.3010 SET A TIMER
+-0.3010 SET AN ALARM
+-0.3010 STOP MUSIC </s>
+-0.3010 THE WEATHER </s>
+
+\end\
