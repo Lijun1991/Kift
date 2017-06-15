@@ -2,7 +2,7 @@ Sam
 set an alarm
 set a timer
 send email
-check events for today
+check events
 check weather
 how is the weather
 music

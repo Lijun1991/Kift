@@ -39,8 +39,9 @@ void process_input(const char *input, ps_decoder_t **ps)
 
 int main(void)
 {
-	ps_decoder_t *ps;
-	ps_decoder_t *ps1;
+	ps_decoder_t	*ps;
+	ps_decoder_t	*ps1;
+	t_info			info;
 
 /*	char *line;
 	int fd1 = open("../ak/train/text.transcription", O_RDONLY);
@@ -66,12 +67,13 @@ int main(void)
 		write(fd2, "\n", 1);
 	}
 */
+	ft_memset(&info, 0, sizeof(t_info));
 	load_knowledge_bases();
 	ps = create_decoders();
 	ps1 = create_decoders_sam();
 	display_menu();
-	get_microphone_input_sam(ps1);
-	get_microphone_input(ps);
+	get_microphone_input(ps1, &info);
+	get_microphone_input(ps, &info);
 	destroy_decoders();
 
 	return (0);

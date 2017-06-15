@@ -22,7 +22,7 @@ static void sleep_msec(int32 ms)
     select(0, NULL, NULL, NULL, &tmo);
 }
 
-void get_microphone_input(ps_decoder_t *ps)
+void get_microphone_input(ps_decoder_t *ps, t_info *info)
 {
 	ad_rec_t *ad;
 	int32 score;
@@ -64,7 +64,7 @@ void get_microphone_input(ps_decoder_t *ps)
 			{
 				// Process what was said.
 				printf("Recognised: %s with score %d\n", hyp, score);
-				// excute_command(hyp);
+				excute_command(hyp, info);
 				process_input(hyp, &ps);
 				fflush(stdout);
 			}

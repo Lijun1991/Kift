@@ -29,8 +29,15 @@ typedef struct 	s_kb
 	t_knowledge	*knowledges;
 }				t_kb;
 
+typedef struct	s_info
+{
+	int music;
+	int timer;
+	int alarm;
+}				t_info;
+
 ps_decoder_t 	*create_decoders();
-void			get_microphone_input(ps_decoder_t *ps);
+void			get_microphone_input(ps_decoder_t *ps, t_info *info);
 void			process_input(const char *input, ps_decoder_t **ps);
 void			process_input_menu(const char *input, ps_decoder_t **ps);
 void			process_input_algo(const char *input, ps_decoder_t **ps);
@@ -41,12 +48,11 @@ void			load_knowledge_bases(void);
 void			add_keyword(t_knowledge *kn, char *word);
 int				contains(const char *from, const char *needle);
 
-void			excute_command(char const *hyp);
+void	excute_command(char const *hyp, t_info *info);
 ps_decoder_t	*create_decoders_sam();
 void			set_an_alarm(void);
 void			stop_music(void);
-void			play_music(void);
-void			get_microphone_input_sam(ps_decoder_t *ps);
+void			play_music(int music);
 
 
 ps_decoder_t	*g_ps_menu;

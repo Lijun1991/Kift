@@ -16,8 +16,8 @@ ps_decoder_t *create_decoders_sam()
 {
 	g_config_command = cmd_ln_init(NULL, ps_args(), TRUE,
 						"-hmm", MODELDIR "/en-us/en-us",
-						"-lm", "models/command.lm",
-						"-dict", "models/command.dic",
+						"-lm", "models/3976.lm",
+						"-dict", "models/3976.dic",
 						//"-logfn", "/dev/null", 
 						NULL);
 	if (g_config_command == NULL)

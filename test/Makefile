@@ -24,7 +24,6 @@ SRCS = hello_ps.c \
 	   contains.c \
 	   excute_command.c \
 	   create_decoders_sam.c \
-	   microphone_input_sam.c
 
 LIB_DIR = libft
 ODIR = obj
