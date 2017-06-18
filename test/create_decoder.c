@@ -54,5 +54,24 @@ ps_decoder_t *create_decoders()
 		return NULL;
 	}
 
+	//Sam
+	g_config_command = cmd_ln_init(NULL, ps_args(), TRUE,
+						"-hmm", MODELDIR "/en-us/en-us",
+						"-lm", "models/command.lm",
+						"-dict", "models/command.dic",
+						//"-logfn", "/dev/null", 
+						NULL);
+	if (g_config_command == NULL)
+	{
+		fprintf(stderr, "Problem with config creation for COMMAND\n");
+		return NULL;
+	}
+	g_ps_command = ps_init(g_config_command);
+	if (g_ps_command == NULL)
+	{
+		fprintf(stderr, "Problem with recogniser creation for COMMAND\n");
+		return NULL;
+	}
+
 	return (g_ps_menu); // Set current recogniser as MENU
 }

@@ -64,8 +64,7 @@ void get_microphone_input(ps_decoder_t *ps, t_info *info)
 			{
 				// Process what was said.
 				printf("Recognised: %s with score %d\n", hyp, score);
-				excute_command(hyp, info);
-				process_input(hyp, &ps);
+				process_input(hyp, &ps, info);
 				fflush(stdout);
 			}
 			

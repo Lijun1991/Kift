@@ -19,9 +19,9 @@ void process_input_menu(const char *input, ps_decoder_t **ps)
 		*ps = g_ps_algo;
 		printf("Going to the ALGO part\n");
 	}
-	else if (contains(input, "command"))
+	else if (contains(input, "sam"))
 	{
 		*ps = g_ps_command;
-		printf("Going to the COMMAND part\n");
+		printf("Going to the SAM part\n");
 	}
 }

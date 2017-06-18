@@ -29,18 +29,19 @@ void destroy_decoders()
 	cmd_ln_free_r(g_config_command);
 }
 
-void process_input(const char *input, ps_decoder_t **ps)
+void process_input(const char *input, ps_decoder_t **ps, t_info	*info)
 {
 	if (*ps == g_ps_menu)
 		process_input_menu(input, ps);
 	else if (*ps == g_ps_algo)
 		process_input_algo(input, ps);
+	else if (*ps == g_ps_command)
+		excute_command(input, info);
 }
 
 int main(void)
 {
 	ps_decoder_t	*ps;
-	ps_decoder_t	*ps1;
 	t_info			info;
 
 /*	char *line;
@@ -70,9 +71,7 @@ int main(void)
 	ft_memset(&info, 0, sizeof(t_info));
 	load_knowledge_bases();
 	ps = create_decoders();
-	ps1 = create_decoders_sam();
 	display_menu();
-	get_microphone_input(ps1, &info);
 	get_microphone_input(ps, &info);
 	destroy_decoders();
 

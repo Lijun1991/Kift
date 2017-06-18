@@ -38,7 +38,7 @@ typedef struct	s_info
 
 ps_decoder_t 	*create_decoders();
 void			get_microphone_input(ps_decoder_t *ps, t_info *info);
-void			process_input(const char *input, ps_decoder_t **ps);
+void			process_input(const char *input, ps_decoder_t **ps, t_info *info);
 void			process_input_menu(const char *input, ps_decoder_t **ps);
 void			process_input_algo(const char *input, ps_decoder_t **ps);
 void			process_input_movies(const char *input, ps_decoder_t **ps);
@@ -48,11 +48,26 @@ void			load_knowledge_bases(void);
 void			add_keyword(t_knowledge *kn, char *word);
 int				contains(const char *from, const char *needle);
 
+/*
+** excute_command.c
+*/
 void	excute_command(char const *hyp, t_info *info);
-ps_decoder_t	*create_decoders_sam();
-void			set_an_alarm(void);
-void			stop_music(void);
-void			play_music(int music);
+
+/*
+** handle_music.c
+*/
+void	stop_music(void);
+void	play_music(int music);
+void	handle_music(char const *hyp, t_info *info);
+
+/*
+** handle_timer.c
+*/
+void	cancel_timer(t_info * info);
+char	*get_time(const char *hyp);
+void	handle_one_to_twenty(char *s_time, int sign);
+void	set_a_timer(const char *hyp, int sign, t_info * info);
+void	handle_timer(const char *hyp, t_info * info);
 
 
 ps_decoder_t	*g_ps_menu;

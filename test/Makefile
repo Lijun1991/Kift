@@ -16,14 +16,12 @@ SRCS = hello_ps.c \
 	   microphone_input.c \
 	   process_input_menu.c \
 	   process_input_algo.c \
-	   process_input_movies.c \
-	   process_input_music.c \
-	   process_input_sports.c \
 	   load_knowledge_bases.c \
 	   add_keyword.c \
 	   contains.c \
 	   excute_command.c \
-	   create_decoders_sam.c \
+	   handle_timer.c \
+	   handle_music.c
 
 LIB_DIR = libft
 ODIR = obj
