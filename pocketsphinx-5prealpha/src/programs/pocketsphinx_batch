@@ -188,7 +188,7 @@ func_exec_program ()
 
   if test -f "$progdir/$program"; then
     # Add our own library path to DYLD_LIBRARY_PATH
-    DYLD_LIBRARY_PATH="/nfs/2016/l/lwang/kift/pocketsphinx-5prealpha/src/libpocketsphinx/.libs:/nfs/2016/l/lwang/kift/pocketsphinx-5prealpha/../sphinxbase/src/libsphinxbase/.libs:$DYLD_LIBRARY_PATH"
+    DYLD_LIBRARY_PATH="/nfs/2016/l/lwang/edit_kift/pocketsphinx-5prealpha/src/libpocketsphinx/.libs:/nfs/2016/l/lwang/kift/pocketsphinx-5prealpha/../sphinxbase/src/libsphinxbase/.libs:$DYLD_LIBRARY_PATH"
 
     # Some systems cannot cope with colon-terminated DYLD_LIBRARY_PATH
     # The second colon is a workaround for a bug in BeOS R4 sed
